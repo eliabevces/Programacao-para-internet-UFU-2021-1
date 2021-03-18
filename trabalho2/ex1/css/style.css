@@ -1,0 +1,27 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: #555555;
+    color: #ddd;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #eeeeee;
+    border: 0.5px solid gray;
+    border-top: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 4%;
+}
+
+p {
+    text-align: left;
+}

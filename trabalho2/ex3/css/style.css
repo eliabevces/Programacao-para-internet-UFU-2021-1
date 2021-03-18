@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: none;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+div {
+    padding: 2rem;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    border-top: none;
+    border: 0.1px solid black;
+}
+
+.imagens {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: inherit;
+    color: #c0bdbd;
+    text-align: center;
+    margin: 30px;
+}
+
+h2 {
+    margin: 0;
+    padding: 1rem;
+    color: grey;
+}
