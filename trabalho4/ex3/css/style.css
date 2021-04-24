@@ -1,0 +1,22 @@
+body {
+    padding: 1rem;
+}
+
+article {
+    font: 1.5rem /1.5 Georgia;
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+}
+
+#firstRow article {
+    background-color: rgba(214, 96, 96, 0.705);
+}
+
+#secondRow article {
+    background-color: rgba(96, 214, 112, 0.685);
+}
+
+#thirdRow article {
+    background-color: rgba(204, 96, 214, 0.562);
+}

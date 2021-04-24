@@ -1,0 +1,39 @@
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background-color: rgb(228, 226, 225);
+    width: 45%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    align-items: center;
+}
+
+input {
+    border: none;
+}
+
+div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+li {
+    width: 60%;
+    padding: 5px 10px 5px 20px;
+    margin: 0 auto;
+    background-color: rgb(189, 217, 240);
+    border: 0.5px solid rgb(70, 67, 212);
+    border-radius: 3px;
+}
+
+li>button {
+    font-size: smaller;
+    float: right;
+    color: red;
+    border: none;
+    background-color: rgb(189, 217, 240);
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: none;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: black;
+    padding: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    text-decoration: inherit;
+    color: #c0bdbd;
+    margin: 30px;
+}
+
+main {
+    align-content: center;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 1920px;
+    height: 900px;
+    align-self: center;
+    margin: 20px 100px 0px 150px;
+}
+
+ul {
+    padding: 0;
+    height: fit-content;
+}
+
+li {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 60%;
+    height: 80%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+input {
+    display: none;
+}
+
+label {
+    background-color: red;
+    bottom: 10px;
+    cursor: pointer;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 1;
+}
+
+#label1 {
+    left: 10px;
+}
+
+#label2 {
+    left: 40px;
+}
+
+#label3 {
+    left: 70px;
+}
+
+#label4 {
+    left: 100px;
+}
+
+#label5 {
+    left: 130px;
+}
+
+#label6 {
+    left: 160px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+iframe {
+    margin: 20px 100px 0px 400px;
+}

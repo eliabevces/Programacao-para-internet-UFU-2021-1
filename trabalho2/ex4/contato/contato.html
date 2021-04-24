@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
     </header>
 
     <main>
-        <section>
-            <h2>Informações para contato:</h2>
+        <h2>Informações para contato:</h2>
+        <div class="registerbox">
             <form action="action.php" method="post">
                 <article>
                     <h2>Dados Pessoais</h2>
@@ -25,45 +26,41 @@
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
                     </div>
-                    <br>
                     <div>
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required>
+                        <span></span>
                     </div>
-                    <br>
                     <div>
                         <label for="idade">Idade:</label>
                         <input type="number" id="idade" name="idade" required>
                     </div>
-                    <br>
                     <div>
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
+                        <input type="tel" id="telefone" name="telefone" pattern="^\([1-9]{2}\) [9]{1}[0-9]{4,5}-[0-9]{4}$" placeholder="(12) 34567-7349" required>
+                        <span></span>
                     </div>
-                    <br>
                     <div>
                         <label for="datanasc">Data de nascimento:</label>
                         <input type="date" name="datanasc" id="datanasc">
                     </div>
-                    <br>
                     <div>
                         <label for="sexo">Sexo:</label>
                         <select name="sexo" id="sexo">
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="intersexual">Intersexual</option>
-                        </select>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="intersexual">Intersexual</option>
+                            </select>
                     </div>
-                    <br>
                     <div>
                         <label for="estado_civil">Estado Civil:</label>
                         <select name="estado_civil" id="estado_civil">
-                            <option value="Solteiro (a)">Solteiro</option>
-                            <option value="Casado (a)">Casado</option>
-                            <option value="Divorciado (a)">Casado</option>
-                            <option value="viuvo">Viúvo (a)</option>
-                            <option value="separado_judicialmente">Separado judicialmente</option>
-                        </select>
+                                <option value="Solteiro (a)">Solteiro</option>
+                                <option value="Casado (a)">Casado</option>
+                                <option value="Divorciado (a)">Casado</option>
+                                <option value="viuvo">Viúvo (a)</option>
+                                <option value="separado_judicialmente">Separado judicialmente</option>
+                            </select>
                     </div>
 
 
@@ -73,14 +70,13 @@
                     <h2>Dados da Empresa</h2>
                     <div>
                         <label for="cnpj">Cnpj:</label>
-                        <input type="text" id="cnpj" name="idade" pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}\-d{2}">
+                        <input type="text" id="cnpj" name="cnpj">
+
                     </div>
-                    <br>
                     <div>
                         <label for="razao_social">Razâo Social:</label>
                         <input type="text" id="razao_social" name="razao_social">
                     </div>
-                    <br>
                     <div>
                         <label for="ramo_de_atuacao">Ramo de Atuação:</label>
                         <input type="text" id="ramo_de_atuacao" name="ramo_de_atuacao">
@@ -93,35 +89,37 @@
                     </h2>
                     <div>
                         <label for="cep">Cep:</label>
-                        <input type="text" id="cep" name="cep" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                        <input type="text" id="cep" name="cep" pattern="\d{5}-?\d{3}" placeholder="12345-678" required>
+                        <span></span>
+
                     </div>
-                    <br>
                     <div>
                         <h2>Tipo de Logradouro: </h2>
                         <p>
-                            <input type="radio" name="tipo_de_logradouro" value="rua" checked> Rua
+                            Rua
+                            <input type="radio" name="tipo_de_logradouro" value="rua" checked>
                         </p>
                         <p>
-                            <input type="radio" name="tipo_de_logradouro" value="avenida">Avenida
+                            Avenida
+                            <input type="radio" name="tipo_de_logradouro" value="avenida">
                         </p>
                         <p>
-                            <input type="radio" name="tipo_de_logradouro" value="praca">Praça
+                            Praça
+                            <input type="radio" name="tipo_de_logradouro" value="praca">
                         </p>
                         <p>
-                            <input type="radio" name="tipo_de_logradouro" value="outro">outro
+                            outro
+                            <input type="radio" name="tipo_de_logradouro" value="outro">
                         </p>
                     </div>
-                    <br>
                     <div>
                         <label for="logradouro">Logradouro:</label>
                         <input type="text" id="logradouro" name="logradouro" required>
                     </div>
-                    <br>
                     <div>
                         <label for="cidade">Cidade:</label>
                         <input type="text" id="cidade" name="cidade" required>
                     </div>
-                    <br>
                     <div>
                         <label for="estado">Estado:</label>
                         <input type="text" id="estado" name="estado" required>
@@ -140,20 +138,20 @@
                         Como ficou sabendo sobre o site:
                     </h2>
                     <div>
-                        <input type="checkbox" id="amigos" name="meio_de_conhecimento[]" value="amigos">
                         <label for="amigos">Amigos</label>
+                        <input type="checkbox" id="amigos" name="meio_de_conhecimento[]" value="amigos">
                     </div>
                     <div>
-                        <input type="checkbox" id="facebook" name="meio_de_conhecimento[]" value="facebook">
                         <label for="facebook">Facebook</label>
+                        <input type="checkbox" id="facebook" name="meio_de_conhecimento[]" value="facebook">
                     </div>
                     <div>
-                        <input type="checkbox" id="whatsapp" name="meio_de_conhecimento[]" value="whatsapp">
                         <label for="whatsapp">whatsapp</label>
+                        <input type="checkbox" id="whatsapp" name="meio_de_conhecimento[]" value="whatsapp">
                     </div>
                     <div>
-                        <input type="checkbox" id="outros" name="meio_de_conhecimento[]" value="outros">
                         <label for="outros">Outros</label>
+                        <input type="checkbox" id="outros" name="meio_de_conhecimento[]" value="outros">
                     </div>
 
                 </article>
@@ -162,13 +160,16 @@
                     <h2>Urgência do contato:</h2>
                     <div>
                         <p>
-                            <input type="radio" name="urgencia" value="urgente"> Urgente
+                            Urgente
+                            <input type="radio" name="urgencia" value="urgente">
                         </p>
                         <p>
-                            <input type="radio" name="urgencia" value="pouca_urgencia">Pouca urgência
+                            Pouca urgência
+                            <input type="radio" name="urgencia" value="pouca_urgencia">
                         </p>
                         <p>
-                            <input type="radio" name="urgencia" value="sem_urgencia" checked>Sem Urgência
+                            Sem Urgência
+                            <input type="radio" name="urgencia" value="sem_urgencia" checked>
                         </p>
 
                     </div>
@@ -176,8 +177,9 @@
                 <button>Enviar</button>
 
             </form>
+        </div>
 
-        </section>
+
     </main>
 </body>
 
